@@ -1,228 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+from textwrap import dedent
+html=dedent('''<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DR VIKASH LADDHA</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-
-background:linear-gradient(180deg,#07090d,#0d1220);
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:20px;
-color:#fff;
-
-}
-
-.container{
-
-width:100%;
-max-width:430px;
-text-align:center;
-
-}
-
-.badge{
-
-display:inline-block;
-padding:10px 22px;
-border:2px solid #ffbf00;
-border-radius:50px;
-color:#ffbf00;
-font-weight:600;
-margin-bottom:35px;
-box-shadow:0 0 20px rgba(255,191,0,.25);
-
-}
-
-.logo{
-
-width:145px;
-height:145px;
-border-radius:50%;
-border:5px solid #ffbf00;
-object-fit:cover;
-box-shadow:0 0 35px rgba(255,191,0,.7);
-margin-bottom:25px;
-
-}
-
-h1{
-
-color:#ffbf00;
-font-size:44px;
-font-weight:800;
-line-height:1.1;
-margin-bottom:25px;
-
-}
-
-.list{
-
-text-align:left;
-display:inline-block;
-font-size:22px;
-line-height:1.9;
-margin-bottom:30px;
-
-}
-
-.stats{
-
-display:flex;
-justify-content:center;
-gap:15px;
-margin-bottom:35px;
-
-}
-
-.box{
-
-background:#171717;
-padding:18px;
-border-radius:18px;
-width:130px;
-box-shadow:0 0 15px rgba(255,191,0,.15);
-
-}
-
-.box h2{
-
-color:#ffbf00;
-font-size:34px;
-
-}
-
-.box p{
-
-color:#cfcfcf;
-
-}
-
-.join{
-
-display:block;
-background:#ffbf00;
-color:#000;
-text-decoration:none;
-font-weight:800;
-font-size:30px;
-padding:22px;
-border-radius:60px;
-margin-bottom:20px;
-animation:pulse 1.2s infinite;
-box-shadow:0 0 35px rgba(255,191,0,.7);
-
-}
-
-@keyframes pulse{
-
-0%{transform:scale(1);}
-50%{transform:scale(1.05);}
-100%{transform:scale(1);}
-
-}
-
-.small{
-
-color:#bfbfbf;
-font-size:16px;
-margin-top:10px;
-
-}
-
-.footer{
-
-margin-top:30px;
-color:#ffbf00;
-font-size:20px;
-font-weight:700;
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<div class="badge">
-📈 STOCK MARKET COMMUNITY
-</div>
-
-<img class="logo"
-src="https://raw.githubusercontent.com/StockTipss/Dr-/main/IMG_20260715_202934_252.jpg">
-
+body{margin:0;font-family:Poppins,sans-serif;background:linear-gradient(#07090d,#0f1625);color:#fff;display:flex;justify-content:center}
+.wrap{max-width:430px;width:100%;padding:24px;text-align:center}
+.top{display:flex;justify-content:space-between;align-items:center}
+.badge{border:2px solid #e8ac19;color:#e8ac19;padding:10px 18px;border-radius:40px;font-weight:700;font-size:14px}
+.logo{width:120px;height:120px;border-radius:50%;border:4px solid #f2b514;box-shadow:0 0 25px #f2b51466;object-fit:cover}
+h1{color:#f2b514;font-size:46px;line-height:1.05;margin:24px 0 12px;font-weight:800}
+ul{list-style:none;padding:0;text-align:left;display:inline-block;font-size:22px;line-height:1.8}
+.cards{display:flex;gap:14px;justify-content:center;margin:20px 0}
+.card{background:#171717;padding:18px;border-radius:18px;width:120px}
+.card b{display:block;color:#f2b514;font-size:32px}
+.btn{display:inline-block;background:#f2b514;color:#111;text-decoration:none;font-weight:800;padding:18px 30px;border-radius:50px;font-size:20px;box-shadow:0 0 25px #f2b514;animation:p 1.2s infinite}
+@keyframes p{50%{transform:scale(1.04)}}
+.small{color:#bcbcbc;margin-top:14px}
+.footer{margin:28px 0;color:#f2b514;font-weight:700}
+</style></head><body><div class="wrap">
+<div class="top"><div class="badge">📈 STOCK MARKET COMMUNITY</div><img class="logo" src="https://raw.githubusercontent.com/StockTipss/Dr-/main/IMG_20260715_202934_252.jpg"></div>
 <h1>👑 DR VIKASH LADDHA</h1>
-
-<div class="list">
-
-📊 NIFTY & BANKNIFTY Analysis<br>
-
-🎯 Price Action Learning<br>
-
-📈 Stock Market Education<br>
-
-🛡️ Risk Management Concepts
-
-</div>
-
-<div class="stats">
-
-<div class="box">
-<h2>26K+</h2>
-<p>Members</p>
-</div>
-
-<div class="box">
-<h2>Daily</h2>
-<p>Updates</p>
-</div>
-
-</div>
-
-<a class="join"
-href="https://t.me/+qEokwh0D-WlkNzJl">
-
-🚀 Join Telegram Community
-
-</a>
-
-<div class="small">
-
-Free Access • Educational Content • Beginner Friendly
-
-</div>
-
-<div class="small">
-
-For Educational Purposes Only. Trading Involves Risk.
-
-</div>
-
-<div class="footer">
-
-🚀 Ads Managed By Dillu Agency
-
-</div>
-
-</div>
-
-</body>
-</html>
+<ul>
+<li>📊 NIFTY & BANKNIFTY Analysis</li>
+<li>🎯 Price Action Learning</li>
+<li>📈 Stock Market Education</li>
+<li>🛡️ Risk Management Concepts</li>
+</ul>
+<div class="cards"><div class="card"><b>26K+</b>Members</div><div class="card"><b>Daily</b>Updates</div></div>
+<a class="btn" href="https://t.me/+qEokwh0D-WlkNzJl">🚀 Join Telegram Community</a>
+<div class="small">Free Access • Educational Content • Beginner Friendly</div>
+<div class="small">For Educational Purposes Only. Trading Involves Risk.</div>
+<div class="footer">🚀 Ads Managed By Dillu Agency</div>
+</div></body></html>''')
+path="/mnt/data/index.html"
+open(path,"w",encoding="utf-8").write(html)
+print(path)
